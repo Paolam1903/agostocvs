@@ -578,7 +578,25 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         elif "LEIDISÂ" in nombre:
             return 1700 / 2000
 
+    # ==================================================
+    # EL BAGRE
+    # ==================================================
 
+    if cvs == "EL BAGRE":
+
+        # Líder
+        if rol == "LIDER":
+            return 1006 / 3500
+
+        # Darly
+        elif "DARLY" in nombre:
+            return 1509 / 3500
+
+        # Jeider
+        elif "JEIDER" in nombre:
+            return 985 / 3500
+
+        
     # ==================================================
     # 🔴 REGLAS NORMALES
     # ==================================================
