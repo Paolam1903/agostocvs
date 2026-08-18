@@ -80,6 +80,7 @@ ACCESOS_CVS = {
     "NUMERARIO": "numerario2026+",
     "GIRARDOTA": "girardota20+",
     "SAN CRISTOBAL" : "Cristobal123",
+    "METRO EST. SAN ANTONIO" : "Metro123",
 
 
 }
