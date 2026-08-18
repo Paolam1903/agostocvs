@@ -34,7 +34,7 @@ if not RUTA_LIQ.exists() or not RUTA_METAS.exists():
 # =============================
 st.markdown("""
 <div style="background-color:#E30613;padding:15px;border-radius:10px">
-<h1 style="color:white;text-align:center">📊 Dashboard Comercial, ventas de agosto al 10 – CVS PLUS  y encuestas pendientes</h1>
+<h1 style="color:white;text-align:center">📊 Dashboard Comercial, ventas de agosto al 15 – CVS PLUS al 12 y encuestas pendientes</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -578,6 +578,22 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         elif "LEIDISÂ" in nombre:
             return 1700 / 2000
 
+
+    # ==================================================
+    # CIUDAD BOLIVAR
+    # ==================================================
+
+    if cvs == "CIUDAD BOLIVAR":
+
+        # Lider Natalie
+        if rol == "LIDER":
+            return 1087.5 / 1500
+
+        # Leidy Yaneth
+        elif "LEIDY" in nombre:
+            return 412.5 / 1500
+        
+
     # ==================================================
     # EL BAGRE
     # ==================================================
@@ -595,6 +611,42 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Jeider
         elif "JEIDER" in nombre:
             return 985 / 3500
+
+    # ==================================================
+    # ENVIGADO
+    # ==================================================
+
+    if cvs == "ENVIGADO":
+
+        # Líder
+        if rol == "LIDER":
+            return 1159.5 / 3500
+
+        # Yessica
+        elif "YESSICA" in nombre:
+            return 1739 / 3500
+
+        # Luz Enith
+        elif "LUZ" in nombre:
+            return 601.5 / 3500
+
+    # ==================================================
+    # SABANETA
+    # ==================================================
+
+    if cvs == "SABANETA":
+
+        # LÃ­der Sandra - 40%
+        if rol == "LIDER":
+            return 1040 / 2600
+
+        # Andrea - 11 días
+        elif "ANDREA" in nombre:
+            return 715 / 2600
+
+        # Luz - 13 días
+        elif "LUZ" in nombre:
+            return 845 / 2600
 
         
     # ==================================================
