@@ -34,7 +34,7 @@ if not RUTA_LIQ.exists() or not RUTA_METAS.exists():
 # =============================
 st.markdown("""
 <div style="background-color:#E30613;padding:15px;border-radius:10px">
-<h1 style="color:white;text-align:center">📊 Dashboard Comercial, ventas de agosto al 15 – CVS PLUS al 12 y encuestas pendientes</h1>
+<h1 style="color:white;text-align:center">📊 Dashboard Comercial, ventas y Accesorios actualizado al 23 de agosto – CVS PLUS al 20 y encuestas pendientes</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -543,6 +543,7 @@ with col2:
 SUPERNUMERARIOS = [
     "Johan Daniel Herrera Mazo",
     "Kelly Yuliana Ospina Saldarriaga",
+    "Aida Quirama",
     "Sara Julieth Acevedo Gutierrez"
 ]
 
@@ -648,6 +649,24 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Luz - 13 días
         elif "LUZ" in nombre:
             return 845 / 2600
+
+        
+    # ==================================================
+    # CALDAS
+    # ==================================================
+    if cvs == "CALDAS":
+
+        # Líder Yolima
+        if rol == "LIDER":
+            return 1202 / 3700
+
+        # Darinela
+        elif "DARINELA" in nombre:
+            return 694 / 3700
+
+        # Johnson
+        elif "JOHNSON" in nombre:
+            return 1804 / 3700
 
         
     # ==================================================

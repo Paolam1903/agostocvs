@@ -100,6 +100,24 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Luz - 13 días
         elif "LUZ" in nombre:
             return 845 / 2600  
+
+
+    # ==================================================
+    # CALDAS
+    # ==================================================
+    if cvs == "CALDAS":
+
+        # Líder Yolima
+        if rol == "LIDER":
+            return 1202 / 3700
+
+        # Darinela
+        elif "DARINELA" in nombre:
+            return 694 / 3700
+
+        # Johnson
+        elif "JOHNSON" in nombre:
+            return 1804 / 3700
     
     # ==================================================
     # 🔴 REGLAS NORMALES
