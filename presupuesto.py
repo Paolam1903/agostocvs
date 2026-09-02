@@ -55,15 +55,15 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
 
         # Líder
         if rol == "LIDER":
-            return 1006 / 3500
+            return 1575 / 3500
 
         # Darly
         elif "DARLY" in nombre:
-            return 1509 / 3500
+            return 853 / 3500
 
         # Jeider
         elif "JEIDER" in nombre:
-            return 985 / 3500
+            return 1378 / 3500
 
     # ==================================================
     # ENVIGADO
@@ -118,6 +118,42 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Johnson
         elif "JOHNSON" in nombre:
             return 1804 / 3700
+
+    # ==================================================
+    # GIRARDOTA
+    # ==================================================
+    if cvs == "GIRARDOTA":
+
+        # Líder Sara
+        if rol == "LIDER":
+            return 200 / 2000
+
+        # Narelig
+        elif "NARELIG" in nombre:
+            return 1700 / 2000
+        
+        # Yuliana
+        elif "YULIANA" in nombre:
+            return 100 / 2000
+
+    # ==================================================
+    # TERMINAL DEL NORTE
+    # ==================================================
+    if cvs == "TERMINAL NORTE":
+
+        # Líder Luz
+        if rol == "LIDER":
+            return 795 / 2650
+
+        # Maria Fernanda
+        elif "MARIA" in nombre:
+            return 1590 / 2650
+
+        # Julieth
+        elif "JULIETH" in nombre:
+            return 265 / 2650
+        
+    
     
     # ==================================================
     # 🔴 REGLAS NORMALES
