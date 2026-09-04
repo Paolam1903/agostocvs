@@ -152,6 +152,28 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Julieth
         elif "JULIETH" in nombre:
             return 265 / 2650
+
+        # ==================================================
+    # JUNIN
+    # ==================================================
+
+    if cvs == "JUNIN":
+
+        # Líder
+        if rol == "LIDER":
+            return 1431 / 6800
+
+        # Nasly Johanna
+        elif "NASLY" in nombre:
+            return 1967 / 6800
+
+        # Jessica
+        elif "JESSICA" in nombre:
+            return 1967 / 6800
+
+        # Sandra Milena
+        elif "SANDRA" in nombre:
+            return 1435 / 6800
         
     
     

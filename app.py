@@ -34,7 +34,7 @@ if not RUTA_LIQ.exists() or not RUTA_METAS.exists():
 # =============================
 st.markdown("""
 <div style="background-color:#E30613;padding:15px;border-radius:10px">
-<h1 style="color:white;text-align:center">📊 Dashboard Comercial, ventas y CVS PLUS de agosto, acesorios actualizado al 27 de agosto – Encuestas al 23</h1>
+<h1 style="color:white;text-align:center">📊 Dashboard Comercial,CVS PLUS y Accesorios de agosto – Encuestas al 23</h1>
 </div>
 """, unsafe_allow_html=True)
 
@@ -703,6 +703,28 @@ def calcular_distribucion(n_asesores, cvs, nombre=None, rol=None):
         # Julieth
         elif "JULIETH" in nombre:
             return 265 / 2650
+
+    # ==================================================
+    # JUNIN
+    # ==================================================
+
+    if cvs == "JUNIN":
+
+        # Líder
+        if rol == "LIDER":
+            return 1431 / 6800
+
+        # Nasly Johanna
+        elif "NASLY" in nombre:
+            return 1967 / 6800
+
+        # Jessica
+        elif "JESSICA" in nombre:
+            return 1967 / 6800
+
+        # Sandra Milena
+        elif "SANDRA" in nombre:
+            return 1435 / 6800
     
         
     # ==================================================
